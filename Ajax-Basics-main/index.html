@@ -1,0 +1,34 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- モバイル最適化  -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  テキストを入力<br><textarea id="text"></textarea><br><button id="send">カウントする</button>
+  <div id="ret"></div>
+  <script>
+    $(function () {
+      $("#send").on("click", function (event) {
+        let id = $("#text").val();
+        $.ajax({
+          type: "POST",
+          url: "count.php",
+          data: { "id": id },
+          dataType: "text"
+        }).done(function (data) {
+          // 通信成功時の処理
+          $("#ret").html(data);
+        }).fail(function (XMLHttpRequest, status, error) {
+          // 津神失敗時の処理
+          alert(error);
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
