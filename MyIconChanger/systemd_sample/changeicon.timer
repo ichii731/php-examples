@@ -1,0 +1,8 @@
+[Unit]
+Description= changeicon timer
+
+[Timer]
+OnUnitActiveSec=360m
+
+[Install]
+WantedBy=timers.target

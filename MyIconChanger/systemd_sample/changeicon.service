@@ -1,0 +1,6 @@
+[Unit]
+Description= ChangeIcon Service
+
+[Service]
+Type= oneshot
+ExecStart= /usr/bin/php /MyIconChanger/change.php
