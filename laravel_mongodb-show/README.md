@@ -5,12 +5,12 @@
 
 解説記事: https://0115765.com/archives/4403
 
-MongoDB Compassで使う場合→[サンプルデータベースのJSONファイル](https://github.com/ichii731/php-examples/blob/main/laravel_mongodb-show/%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9.json)
+MongoDB Compassを使う場合→[サンプルデータベースのJSONファイル](https://github.com/ichii731/php-examples/blob/main/laravel_mongodb-show/%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9.json)
 
 ## For EN
 Only the diff directory files are being pushed.
 
 Posted article: https://dev.to/ichii731/let-s-connect-show-mongodb-with-laravel-2n31
 
-MongoDB Compassで使う場合→[サンプルデータベースのJSONファイル](https://github.com/ichii731/php-examples/blob/main/laravel_mongodb-show/%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9.json)
+When using MongoDB Compass→[Sample database JSON file (Japanese)](https://github.com/ichii731/php-examples/blob/main/laravel_mongodb-show/%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9.json)
 
