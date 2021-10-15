@@ -63,7 +63,7 @@ try {
             <tbody>
                 <tr>
                     <td>AccessToken</td>
-                    <td class="copy" data-clipboard-text="<?=$info["at"];?></td>"><?=$info["at"];?></td>
+                    <td class="copy" data-clipboard-text="<?=$info["at"];?>"><?=$info["at"];?></td>
                 </tr>
                 <tr>
                     <td>AccessTokenSecret</td>
