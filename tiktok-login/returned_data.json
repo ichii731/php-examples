@@ -1,0 +1,16 @@
+{
+	"data": {
+		"avatar": "https://p16-sign-sg.tiktokcdn.com/aweme/100x100/..........",
+		"avatar_larger": "https://p16-sign-sg.tiktokcdn.com/aweme/1080x1080/..........",
+		"captcha": "",
+		"client_key": "<KEY>",
+		"desc_url": "",
+		"description": "",
+		"display_name": "<NAME>",
+		"error_code": 0,
+		"log_id": "<LOG_ID>",
+		"open_id": "<OPEN_ID>",
+		"union_id": "<UNION_ID>"
+	},
+	"message": "success"
+}
