@@ -1,0 +1,52 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "171e271fd9fe9ac8b07b6bc546d8164c",
+    "packages": [
+        {
+            "name": "gimucco/tiktok-loginkit",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andreaolivato/TikTok-LoginKit-PHP.git",
+                "reference": "d6972714f5ca0d59c572ad059eb46ed3df3307a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andreaolivato/TikTok-LoginKit-PHP/zipball/d6972714f5ca0d59c572ad059eb46ed3df3307a1",
+                "reference": "d6972714f5ca0d59c572ad059eb46ed3df3307a1",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gimucco\\TikTokLoginKit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Andrea Olivato",
+                    "email": "andrea@olivato.me"
+                }
+            ],
+            "description": "TikTok Login Kit for Web in PHP",
+            "time": "2021-06-03T03:41:33+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}

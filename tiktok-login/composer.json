@@ -1,0 +1,5 @@
+{
+    "require": {
+        "gimucco/tiktok-loginkit": "^0.2.0"
+    }
+}
