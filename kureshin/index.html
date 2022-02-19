@@ -1,0 +1,97 @@
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Style by https://qiita.com/yhatt/items/4cd0c21b6bf5cf8af456 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+        .preview {
+            aspect-ratio: 4 / 3;
+            background: linear-gradient(to bottom, rgb(94% 51% 64%), rgb(95% 95% 50%));
+            display: grid;
+            place-content: center;
+            width: 600px;
+
+        }
+        h1 {
+            color: purple;
+            font-family: 'Kosugi Maru', sans-serif;
+            font-size: 30px;
+            padding-left: 1em;
+            line-height: 1.5;
+        }
+        h1::before {
+            content: '';
+            margin-left: -1em;
+        }
+        button {
+            margin-top: 1em;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="preview">
+            <h1 v-html="title"></h1>
+        </div>
+        <label>上段:
+            <input type="text" v-model="top">
+        </label>
+        <br>
+        <label>下段:
+            <input type="text" v-model="bottom">
+        </label>
+        <br>
+        <button @click="AddText">反映</button>
+        <br>
+        <button @click="generate">
+            画像として保存
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.3.2/dist/html2canvas.min.js"></script>
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                top: "",
+                bottom: "",
+                title: "上段と下段を<br>入力してください"
+            },
+            methods: {
+                AddText() {
+                    if (!this.top == "" || !this.buttom == "") {
+                        fetch("./addruby.php?sentence=" + this.top)
+                            .then(res => res.text())
+                            .then(data => {
+                                this.title = data + "<br>";
+                                return fetch("./addruby.php?sentence=" + this.bottom);
+                            })
+                            .then(res => res.text())
+                            .then(data => {
+                                this.title += data;
+                            });
+                    } else {
+                        alert("入力してください");
+                    }
+                },
+                generate() {
+                    html2canvas(document.querySelector('.preview')).then((canvas) => {
+                        const link = document.createElement('a')
+                        link.href = canvas.toDataURL()
+                        link.download = `image.png`
+                        link.click()
+                    })
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>
